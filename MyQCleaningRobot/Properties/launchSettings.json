@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MyQCleaningRobot": {
+      "commandName": "Project",
+      "commandLineArgs": "test1.json result.json"
+    }
+  }
+}
