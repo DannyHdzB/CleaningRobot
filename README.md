@@ -22,3 +22,8 @@ The input file needs to have the next structure
   "battery": 80
 }
 ```
+
+For run it, write in your console the next
+```
+cleaning_robot <inputFile.json> <outputFile.json>
+```
