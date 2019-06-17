@@ -12,18 +12,21 @@ namespace MyQCleaningRobot
             if (args.Length < 2)
             {
                 Console.WriteLine("Please specify the input and output files");
+                return;
             }
 
             string inputFileName = args[0];
 
             if (!inputFileName.EndsWith(".json")) {
                 Console.WriteLine("Input file should be a json file");
+                return;
             }
 
             string outputFileName = args[1];
             if (!outputFileName.EndsWith(".json"))
             {
                 Console.WriteLine("Output file should be a json file");
+                return;
             }
 
             string[] inputLines = File.ReadAllLines(inputFileName);
