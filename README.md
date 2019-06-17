@@ -1,12 +1,13 @@
 # CleaningRobot
 Cleaning Robot Exercise
 
-For using it, you need to use the content inside "Executable" folder.
+For using it, you need to use the content inside "Executable" folder. You don't need any developer tool or compile the files, it is ready  for use.
+
 The application was made for running in a windows environment.
 
 Before running you need to add an input file json inside "Executable" folder. Also, an output file with json extension.
 
-The input file needs to have the next structure. In other way, it don't work.
+The input file needs to have the next structure
 
 ```json
 {
