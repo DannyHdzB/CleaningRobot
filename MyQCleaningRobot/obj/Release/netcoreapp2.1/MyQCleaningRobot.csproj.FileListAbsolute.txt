@@ -1,0 +1,11 @@
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\bin\Release\netcoreapp2.1\MyQCleaningRobot.deps.json
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\bin\Release\netcoreapp2.1\MyQCleaningRobot.runtimeconfig.json
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\bin\Release\netcoreapp2.1\MyQCleaningRobot.runtimeconfig.dev.json
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\bin\Release\netcoreapp2.1\MyQCleaningRobot.dll
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\bin\Release\netcoreapp2.1\MyQCleaningRobot.pdb
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\obj\Release\netcoreapp2.1\MyQCleaningRobot.csprojAssemblyReference.cache
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\obj\Release\netcoreapp2.1\MyQCleaningRobot.csproj.CoreCompileInputs.cache
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\obj\Release\netcoreapp2.1\MyQCleaningRobot.AssemblyInfoInputs.cache
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\obj\Release\netcoreapp2.1\MyQCleaningRobot.AssemblyInfo.cs
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\obj\Release\netcoreapp2.1\MyQCleaningRobot.dll
+C:\Users\Sieena\Documents\CleaningRobot\MyQCleaningRobot\obj\Release\netcoreapp2.1\MyQCleaningRobot.pdb

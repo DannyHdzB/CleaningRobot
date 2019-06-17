@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sieena\\Documents\\Other\\MyQCleaningRobot\\MyQCleaningRobot\\MyQCleaningRobot.csproj",
-      "projectName": "MyQCleaningRobot",
-      "projectPath": "C:\\Users\\Sieena\\Documents\\Other\\MyQCleaningRobot\\MyQCleaningRobot\\MyQCleaningRobot.csproj",
+      "projectUniqueName": "C:\\Users\\Sieena\\Documents\\CleaningRobot\\MyQCleaningRobot\\cleaning_robot.csproj",
+      "projectName": "cleaning_robot",
+      "projectPath": "C:\\Users\\Sieena\\Documents\\CleaningRobot\\MyQCleaningRobot\\cleaning_robot.csproj",
       "packagesPath": "C:\\Users\\Sieena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sieena\\Documents\\Other\\MyQCleaningRobot\\MyQCleaningRobot\\obj\\",
+      "outputPath": "C:\\Users\\Sieena\\Documents\\CleaningRobot\\MyQCleaningRobot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
