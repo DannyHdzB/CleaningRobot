@@ -11,17 +11,21 @@ namespace MyQCleaningRobot
         private string Name;
         private shortInstruction ShortName;
         private int Cost;
+        private bool IsBackOffInstruction;
 
-        public Instruction(string name, string shortName, int cost)
+        public Instruction(string name, string shortName, int cost, bool isBackOffInstruction)
         {
             Name = name;
             ShortName = (shortInstruction)Enum.Parse(typeof(shortInstruction), shortName);
             Cost = cost;
+            IsBackOffInstruction = isBackOffInstruction;
         }
 
         public Instruction(string shortName)
         {
             ShortName = (shortInstruction)Enum.Parse(typeof(shortInstruction), shortName);
+            IsBackOffInstruction = false;
+
             switch (ShortName) {
                 case shortInstruction.TL:
                     Name = "Turn Left";
@@ -57,6 +61,11 @@ namespace MyQCleaningRobot
 
         public int GetCost() {
             return Cost;
+        }
+
+        public bool GetIsBackOffInstruccion()
+        {
+            return IsBackOffInstruction;
         }
     }
 }

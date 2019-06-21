@@ -22,30 +22,30 @@ namespace MyQCleaningRobot
             CommandsToExecute = commands;
             CommandsForBackOff = new List<List<Instruction>>() {
                 new List<Instruction>(){
-                    new Instruction("Turn Right", "TR", 1),
-                    new Instruction("Advance", "A", 2)
+                    new Instruction("Turn Right", "TR", 1, true),
+                    new Instruction("Advance", "A", 2, true)
                 },
                 new List<Instruction>(){
-                    new Instruction("Turn Left", "TL", 1),
-                    new Instruction("Back", "B", 3),
-                    new Instruction("Turn Right", "TR", 1),
-                    new Instruction("Advance", "A", 2)
+                    new Instruction("Turn Left", "TL", 1, true),
+                    new Instruction("Back", "B", 3, true),
+                    new Instruction("Turn Right", "TR", 1, true),
+                    new Instruction("Advance", "A", 2, true)
                 },
                 new List<Instruction>(){
-                    new Instruction("Turn Left", "TL", 1),
-                    new Instruction("Turn Left", "TL", 1),
-                    new Instruction("Advance", "A", 2)
+                    new Instruction("Turn Left", "TL", 1, true),
+                    new Instruction("Turn Left", "TL", 1, true),
+                    new Instruction("Advance", "A", 2, true)
                 },
                 new List<Instruction>(){
-                    new Instruction("Turn Right", "TR", 1),
-                    new Instruction("Back", "B", 3),
-                    new Instruction("Turn Right", "TR", 1),
-                    new Instruction("Advance", "A", 2)
+                    new Instruction("Turn Right", "TR", 1, true),
+                    new Instruction("Back", "B", 3, true),
+                    new Instruction("Turn Right", "TR", 1, true),
+                    new Instruction("Advance", "A", 2, true)
                 },
                 new List<Instruction>(){
-                    new Instruction("Turn Left", "TL", 1),
-                    new Instruction("Turn Left", "TL", 1),
-                    new Instruction("Advance", "A", 2)
+                    new Instruction("Turn Left", "TL", 1, true),
+                    new Instruction("Turn Left", "TL", 1, true),
+                    new Instruction("Advance", "A", 2, true)
                 }
             };
             BackOffIteration = 0;
@@ -91,10 +91,13 @@ namespace MyQCleaningRobot
                     }
                     else
                     {
+                        CommandsToExecute.RemoveAll(i => i.GetIsBackOffInstruccion());
+
                         for (int i = 0; i < CommandsForBackOff[BackOffIteration].Count; i++)
                         {
                             CommandsToExecute.Insert(i, CommandsForBackOff[BackOffIteration][i]);
                         }
+
                         BackOffIteration++;
                     }
                 }
@@ -174,5 +177,6 @@ namespace MyQCleaningRobot
             return string.Format("{{\n\"visited\" : {0},\n\"cleaned\" : {1},\n\"final\" : {2},\n\"battery\" : {3}\n}}", 
                 PrintCells(VisitedCells), PrintCells(CleanedCells), Robot.GetPosition(), Robot.GetBattery());
         }
+
     }
 }
